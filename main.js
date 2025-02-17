@@ -18,8 +18,16 @@ const computer_number = generate_rnd_number(1, 5);
 
 console.log(computer_number);
 
-
 // somma dei numeri con funzione
+
+function get_sum (number1, number2){
+    return sum = number1 + number2
+}
+
+const sum_number = get_sum (user_number, computer_number)
+
+console.log(sum_number);
+
 
 // verifica pari o dispari con funzione
 
