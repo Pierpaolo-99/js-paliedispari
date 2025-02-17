@@ -8,8 +8,13 @@ console.log(`l'utente ha scelto: ${user_choice}`);
 // domandare all'utente un numero da 1 a 5
 
 const user_number = Number(prompt('scegliere un numero da 1 a 5'))
-console.log(`l'utente ha scelto il numero: ${user_number}`);
 
+if (user_number > 5 || user_number < 1){
+    alert('puoi scegliere solo i numeri da 1 a 5')
+}
+else{
+    console.log(`l'utente ha scelto il numero: ${user_number}`);
+}
 
 // generazione numero random da 1 a 5 per il computer con funzione
 
@@ -34,11 +39,11 @@ console.log(`la somma dei numeri è: ${sum_number}`);
 // verifica pari o dispari con funzione
 
 function is_even_number (number){
-
+    
     if (number % 2 === 0){
-        return true 
+        return 'pari' 
     }
-    return false
+    return 'dispari'
 }
 const result = is_even_number (sum_number)
 
@@ -49,4 +54,4 @@ if  (is_even_number (sum_number)){
 else{
     console.log('hai perso');
 }
-// stampa del vincitore
+
