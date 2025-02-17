@@ -11,7 +11,7 @@ const user_number = Number(prompt('scegliere un numero da 1 a 5'))
 // generazione numero random da 1 a 5 per il computer con funzione
 
 function generate_rnd_number(min, max){
-    return number = Math.floor(Math.random() * (max - min +1)) +min;
+    return rnd_number = Math.floor(Math.random() * (max - min +1)) +min;
 }
 
 const computer_number = generate_rnd_number(1, 5);
@@ -28,7 +28,21 @@ const sum_number = get_sum (user_number, computer_number)
 
 console.log(sum_number);
 
-
 // verifica pari o dispari con funzione
 
+function is_even_number (number){
+
+    if (number % 2 === 0){
+        return true 
+    }
+    return false
+}
+is_even_number (sum_number)
+
+if  (is_even_number (sum_number)){
+    console.log('pari');
+}
+else{
+    console.log('dispari');
+}
 // stampa del vincitore
